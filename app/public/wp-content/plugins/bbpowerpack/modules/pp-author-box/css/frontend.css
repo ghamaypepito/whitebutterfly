@@ -1,0 +1,45 @@
+.pp-authorbox-wrapper {
+	height: auto;
+	display: flex;
+	flex: 1 1 auto;
+	align-items: center;
+}
+
+.pp-authorbox-wrapper > * {
+	display: inline-flex;
+}
+
+.pp-authorbox-content {
+	width: 100%;
+	border: 1px solid #e8e8e8;
+	position: relative;
+}
+
+.pp-authorbox-wrapper > .pp-authorbox-author {
+	width:100%;
+}
+
+.pp-authorbox-wrapper .pp-authorbox-author-name {
+	margin:0;
+}
+.pp-authorbox-author-name a {
+	text-decoration: none;
+}
+
+.pp-author-box-button .pp-author-archive-btn {
+	background-color: unset;
+	display: inline-block;
+	text-decoration: none;
+}
+
+.pp-authorbox-img {
+	margin-right: 15px;
+}
+.pp-authorbox-img > a {
+	width: 100px;
+	height: 100px;
+	overflow: hidden;
+	justify-content: center;
+	vertical-align: middle;
+	display: inline;
+}

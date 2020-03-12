@@ -1,0 +1,24 @@
+img.pp-how-to-image {
+    width: 100%;
+}
+.pp-how-to-step {
+    display: flex;
+}
+.pp-how-to-step-content {
+    width: 70%;
+}
+.pp-how-to-step-image {
+    width: 30%;
+}
+.pp-how-to-container .pp-supply {
+	display: flex;
+    align-items: center;
+}
+.pp-how-to-container .pp-tool {
+	display: flex;
+    align-items: center;
+}
+
+.pp-how-to-container .pp-how-to-step.pp-has-img .pp-how-to-step-image img {
+	width: 100%;
+}

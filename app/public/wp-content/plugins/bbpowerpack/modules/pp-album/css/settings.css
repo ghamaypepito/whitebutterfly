@@ -1,0 +1,6 @@
+#fl-field-trigger_button_typo .fl-typography-field-align {
+	display: none;
+}
+.fl-builder-settings-fields #fl-field-toolbar_buttons select[multiple] {
+    height: 120px !important;
+}

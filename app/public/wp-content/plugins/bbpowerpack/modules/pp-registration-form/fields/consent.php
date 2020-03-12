@@ -1,0 +1,2 @@
+<input type="checkbox" class="pp-rf-control" name="<?php echo $field->name; ?>" id="<?php echo $field_id; ?>" value="1"<?php echo 'yes' == $field->default_checked ? ' checked="checked"' : ''; ?> />
+<label for="<?php echo $field->id; ?>" class="pp-rf-field-label"><?php echo $field->field_label; ?></label>

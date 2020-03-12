@@ -1,0 +1,246 @@
+.fl-module-pp-reviews .fl-module-content.fl-node-content {
+	position: relative;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.pp-reviews-wrapper {
+	width: 94%;
+	margin: auto;
+}
+
+.pp-reviews-wrapper .swiper-container {
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	width: 100%;
+}
+
+.pp-reviews-wrapper .swiper-wrapper {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: stretch;
+	-webkit-align-items: stretch;
+	-ms-flex-align: stretch;
+	align-items: stretch;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+
+.pp-reviews-wrapper .swiper-slide {
+	-webkit-flex-shrink: 0;
+	-ms-flex-negative: 0;
+	flex-shrink: 0;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.pp-reviews-wrapper .pp-review-item.swiper-slide {
+	width: 100%;
+	text-align: center;
+	padding: 0;
+	height: auto;
+}
+
+.pp-reviews-wrapper .pp-swiper-button {
+	background-image: none;
+	width: auto;
+	height: auto;
+	line-height: 1;
+	position: absolute;
+	display: inline-flex;
+	z-index: 1;
+	cursor: pointer;
+	font-size: 25px;
+	top: calc(50% - (30px / 2));
+	transform: translateY(-50%);
+	color: hsla(0,0%,93%,.9);
+}
+
+.pp-reviews-wrapper .pp-swiper-button-prev {
+	left: 0;
+}
+
+.pp-reviews-wrapper .pp-swiper-button-next {
+	right: 0;
+}
+
+.pp-reviews-wrapper .pp-reviews-swiper {
+	padding-bottom: 30px;
+}
+
+.pp-reviews-wrapper .swiper-container-horizontal .swiper-pagination {
+	position: relative;
+	top: 0 !important;
+	bottom: unset !important;
+}
+
+.pp-reviews-wrapper .swiper-container-horizontal > .swiper-pagination-bullets,
+.pp-reviews-wrapper .swiper-pagination-custom,
+.pp-reviews-wrapper .swiper-pagination-fraction {
+	bottom: unset;
+}
+
+.pp-reviews-wrapper .dashicons,
+.pp-reviews-wrapper .dashicons-before:before {
+	width: unset !important;
+}
+
+.pp-review {
+	border: 1px solid #e8e8e8;
+	height: 100%;
+	background-color: #fff;
+	border-radius: 5px;
+}
+
+.pp-review-header,
+.pp-review-content {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.pp-review-header {
+	padding-top: 15px;
+	padding-bottom: 6px;
+	font-family: "Roboto", Sans-serif;
+	font-weight: 600;
+}
+
+.pp-review-name {
+	color: #1c2022;
+	font-size: 12.5px;
+	font-weight: 400;
+	font-family: inherit;
+	text-align:  left;
+}
+
+.pp-review-title {
+	font-size: 12.5px;
+	font-weight: 400;
+	font-family: inherit;
+	text-align:  left;
+}
+
+.pp-review-content {
+	padding-top: 6px;
+	padding-bottom: 15px;
+}
+
+.pp-review-header,
+.pp-review-content {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.pp-review-header.has-separator {
+	border-bottom: 1px solid #e8e8e8;
+}
+
+.pp-review-image {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-shrink: 0;
+	-ms-flex-negative: 0;
+	flex-shrink: 0;
+}
+
+.pp-review-image img {
+	height: 36px;
+	width: 36px;
+	border-radius: 999px;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+
+.pp-review-cite {
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	font-style: normal;
+	font-size: 14px;
+	line-height: 1;
+	width: 100%;
+}
+
+.pp-review-icon {
+	margin-left: auto;
+}
+
+.pp-review-text {
+	width: 100%;
+}
+
+.pp-rating {
+	text-align: left;
+}
+.pp-rating i {
+	font-style: normal;
+	display: inline-block;
+	position: relative;
+	font-style: normal;
+	cursor: default;
+	transition: color .2s ease-in-out;
+}
+
+.pp-rating i:before {
+	content: "\f005";
+	display: inline;
+	font-size: inherit;
+	font-family: inherit;
+	position: absolute;
+	overflow: hidden;
+	color: #f0ad4e;
+}
+
+.pp-rating i.pp-star-empty:before {
+	width: 0;
+}
+.pp-rating i.pp-star-0:before {
+	width: 0;
+}
+.pp-rating i.pp-star-1:before {
+	width: 10%;
+}
+.pp-rating i.pp-star-2:before {
+	width: 20%;
+}
+.pp-rating i.pp-star-3:before {
+	width: 30%;
+}
+.pp-rating i.pp-star-4:before {
+	width: 40%;
+}
+.pp-rating i.pp-star-5:before {
+	width: 50%;
+}
+.pp-rating i.pp-star-6:before {
+	width: 60%;
+}
+.pp-rating i.pp-star-7:before {
+	width: 70%;
+}
+.pp-rating i.pp-star-8:before {
+	width: 80%;
+}
+.pp-rating i.pp-star-9:before {
+	width: 90%;
+}
+.pp-rating i.pp-star-10:before {
+	width: 100%;
+}

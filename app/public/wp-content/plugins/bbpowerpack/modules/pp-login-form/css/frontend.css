@@ -1,0 +1,23 @@
+.pp-login-form-wrap .pp-field-group {
+	margin-bottom: 10px;
+}
+.pp-login-form-wrap .pp-field-group > label {
+	display: block;
+}
+.pp-login-form-wrap .pp-field-group a {
+	cursor: pointer;
+}
+.pp-login-form-wrap .pp-field-group .pp-login-form--input {
+	width: 100%;
+}
+.pp-login-form-wrap .pp-event-disabled {
+	opacity: 0.5;
+	pointer-events: none;
+}
+.pp-login-form-wrap .pp-lf-error {
+	color: red;
+}
+.pp-login-form-wrap .pp-login-form > .pp-lf-error {
+	display: block;
+	margin-top: 15px;
+}

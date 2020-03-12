@@ -1,0 +1,10 @@
+#fl-field-email_metadata select[name="email_metadata[]"] {
+	min-height: 90px;
+}
+#fl-builder-settings-section-recaptcha_settings .fl-builder-settings-description {
+	padding-top: 15px;
+    padding-bottom: 0;
+}
+#fl-builder-settings-section-recaptcha_settings .fl-builder-settings-description a {
+	text-decoration: underline;
+}

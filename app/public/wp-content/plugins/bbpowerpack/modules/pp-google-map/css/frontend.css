@@ -1,0 +1,7 @@
+.pp-google-map {
+	height: 300px;
+	width: 100%;
+}
+.pp-google-map .gm-style .gm-svpc div img {
+	position: unset !important;
+}

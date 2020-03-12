@@ -1,0 +1,45 @@
+/**
+ * This file should contain frontend styles that
+ * will be applied to all module instances.
+ */
+
+.bb-wf-input.input-small {
+    width: 46px !important;
+}
+
+.pp-fluent-form-content {
+	position: relative;
+}
+
+.pp-fluent-form-content .wpforms-container,
+.pp-fluent-form-content .pp-form-title,
+.pp-fluent-form-content .pp-form-description {
+	position: relative;
+}
+
+.pp-fluent-form-content .caldera-grid .radio input[type=radio] {
+    margin-top: 3px;
+}
+
+.pp-fluent-form-content div.wpforms-container-full .wpforms-form input.wpforms-field-medium,
+.pp-fluent-form-content div.wpforms-container-full .wpforms-form select.wpforms-field-medium,
+.pp-fluent-form-content div.wpforms-container-full .wpforms-form .wpforms-field-row.wpforms-field-medium {
+    max-width: 100%;
+}
+
+.pp-fluent-form-content .ff-el-section-break hr {
+	display: none;
+}
+
+.pp-fluent-form-content .fluentform  .ff-el-form-control:focus {
+	box-shadow: none;
+}
+
+.pp-fluent-form-content .fluentform .iti--allow-dropdown input.ff-el-form-control, 
+.pp-fluent-form-content .fluentform.iti--allow-dropdown input[type=tel].ff-el-form-control, 
+.pp-fluent-form-content .fluentform .iti--allow-dropdown input[type=text].ff-el-form-control, 
+.pp-fluent-form-content .fluentform .iti--separate-dial-code input.ff-el-form-control, 
+.pp-fluent-form-content .fluentform .iti--separate-dial-code input[type=tel].ff-el-form-control, 
+.pp-fluent-form-content .fluentform .iti--separate-dial-code input[type=text].ff-el-form-control {
+	padding-left: 52px;
+}

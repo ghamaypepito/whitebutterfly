@@ -1,0 +1,247 @@
+.pp-registration-form .pp-rf-fields-wrap {
+	margin-right: calc( -10px/2 );
+	margin-left: calc( -10px/2 );
+	margin-bottom: -10px;
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.pp-registration-form .pp-rf-field {
+	padding-right: calc( 10px/2 );
+	padding-left: calc( 10px/2 );
+	margin-bottom: 10px;
+	width: 100%;
+	position: relative;
+	min-height: 1px;
+	min-width: 25px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.pp-registration-form .pp-rf-field .pp-rf-field-inner {
+	width: 100%;
+	position: relative;
+	display: inline-flex;
+}
+
+.pp-registration-form label {
+	cursor: pointer;
+}
+.pp-registration-form .pp-rf-field-label {
+	width: 100%;
+}
+
+.pp-registration-form .pp-rf-field .pp-rf-pws-status {
+	font-size: 12px;
+	margin-right: 10px;
+}
+.pp-registration-form .pp-rf-field .pp-rf-pws-status.short {
+	color: red;
+}
+.pp-registration-form .pp-rf-field .pp-rf-pws-status.bad {
+	color: #FF5722
+}
+.pp-registration-form .pp-rf-field .pp-rf-pws-status.good {
+	color: #FF9800;
+}
+.pp-registration-form .pp-rf-field .pp-rf-pws-status.strong {
+	color: #4CAF50;
+}
+
+.pp-registration-form .pp-rf-field input[type="checkbox"],
+.pp-registration-form .pp-rf-field input[type="checkbox"] + label {
+	margin: 0;
+	user-select: none;
+}
+.pp-registration-form .pp-rf-field input[type="checkbox"] {
+	margin-right: 5px;
+}
+.pp-registration-form .pp-rf-field input[type="checkbox"] + label {
+	display: inline-block;
+	width: auto;
+	padding-bottom: 0 !important;
+}
+
+.pp-registration-form .pp-rf-wrap .pp-rf-field input[type="radio"],
+.pp-registration-form .pp-rf-wrap .pp-rf-field input[type="checkbox"] {
+	/*-webkit-appearance: none;*/
+	height: auto;
+	outline: none;
+	display: inline-block;
+	outline: none;
+}
+.pp-registration-form .pp-rf-wrap .pp-rf-field input[type="radio"]:checked:before,
+.pp-registration-form .pp-rf-wrap .pp-rf-field input[type="checkbox"]:checked:before {
+	content: "";
+	padding: 0px;
+	margin: 0px;
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-radius: 100px;
+}
+
+.pp-registration-form .pp-rf-field button.pp-rf-toggle-pw {
+	display: none;
+	background: 0 0;
+    border: 1px solid transparent;
+    box-shadow: none;
+	color: #000;
+	opacity: 0.4;
+    font-size: 14px;
+    line-height: 2;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-decoration: none;
+}
+.pp-registration-form .pp-rf-field button.pp-rf-toggle-pw:focus {
+	opacity: 0.7;
+}
+.pp-registration-form .pp-rf-field button.pp-rf-toggle-pw .dashicons {
+	position: relative;
+    top: .25rem;
+    font-size: 18px;
+}
+.pp-registration-form .pp-rf-field.pp-rf-field-pw-toggle button.pp-rf-toggle-pw {
+	display: inline-block;
+}
+
+.pp-registration-form .pp-rf-button-wrap {
+	display: flex;
+}
+.pp-registration-form .pp-rf-button-wrap .pp-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.3s ease-in-out;
+}
+.pp-registration-form .pp-rf-button-wrap .pp-button-icon {
+	transition: all 0.3s ease-in-out;
+}
+.pp-registration-form .pp-disabled {
+    opacity: 0.3;
+    pointer-events: none;
+}
+.pp-registration-form .pp-after-submit-action {
+	width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+.pp-registration-form .pp-rf-failed-error.pp-error-fields-count {
+	width: 100%;
+    display: block;
+    text-align: center;
+    margin: 5px;
+}
+
+.pp-registration-form .pp-rf-error,
+.pp-registration-form .pp-rf-error-inline {
+	display: none;
+	color: red;
+	font-size: 12px;
+}
+form.pp-registration-form div.pp-rf-field.pp-rf-validation-error .pp-rf-control,
+form.pp-registration-form div.pp-rf-field.pp-rf-field-error .pp-rf-control {
+	border-color: red;
+}
+.pp-registration-form .pp-rf-validation-error .pp-rf-error,
+.pp-registration-form .pp-rf-field-error .pp-rf-error-inline {
+	display: block;
+}
+
+@media (min-width: 768px) {
+	.pp-registration-form .pp-rf-field.pp-rf-col-10 {
+		width: 10%;
+	}
+
+	.pp-registration-form .pp-rf-field.pp-rf-col-11 {
+		width: 11.111%;
+	}
+
+	.pp-registration-form .pp-rf-field.pp-rf-col-12 {
+		width: 12.5%;
+	}
+
+	.pp-registration-form .pp-rf-field.pp-rf-col-14 {
+		width: 14.285%;
+	}
+
+	.pp-registration-form .pp-rf-field.pp-rf-col-16 {
+		width: 16.666%;
+	}
+
+	.pp-registration-form .pp-rf-field.pp-rf-col-20 {
+		width: 20%;
+	}
+
+	.pp-registration-form .pp-rf-field.pp-rf-col-25 {
+		width: 25%;
+	}
+
+	.pp-registration-form .pp-rf-field.pp-rf-col-30 {
+		width: 30%;
+	}
+
+	.pp-registration-form .pp-rf-field.pp-rf-col-33 {
+		width: 33.333%;
+	}
+
+	.pp-registration-form .pp-rf-field.pp-rf-col-40 {
+		width: 40%;
+	}
+
+	.pp-registration-form .pp-rf-field.pp-rf-col-50 {
+		width: 50%;
+	}
+
+	.pp-registration-form .pp-rf-field.pp-rf-col-60 {
+		width: 60%;
+	}
+
+	.pp-registration-form .pp-rf-field.pp-rf-col-66 {
+		width: 66.666%;
+	}
+
+	.pp-registration-form .pp-rf-field.pp-rf-col-70 {
+		width: 70%;
+	}
+
+	.pp-registration-form .pp-rf-field.pp-rf-col-75 {
+		width: 75%;
+	}
+
+	.pp-registration-form .pp-rf-field.pp-rf-col-80 {
+		width: 80%;
+	}
+
+	.pp-registration-form .pp-rf-field.pp-rf-col-83 {
+		width: 83.333%;
+	}
+
+	.pp-registration-form .pp-rf-field.pp-rf-col-90 {
+		width: 90%;
+	}
+
+	.pp-registration-form .pp-rf-field.pp-rf-col-100 {
+		width: 100%;
+	}
+}

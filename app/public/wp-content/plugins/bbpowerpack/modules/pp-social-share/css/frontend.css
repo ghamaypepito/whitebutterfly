@@ -1,0 +1,729 @@
+.pp-screen-only {
+    position: absolute;
+    top: -10000em;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+/* Columns */
+.pp-social-share-col-0 .pp-social-share-inner {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.pp-social-share-col-1 .pp-social-share-inner {
+    grid-template-columns: repeat(1,1fr);
+    display: grid;
+}
+
+.pp-social-share-col-2 .pp-social-share-inner {
+    grid-template-columns: repeat(2,1fr);
+    display: grid;
+}
+
+.pp-social-share-col-3 .pp-social-share-inner {
+    grid-template-columns: repeat(3,1fr);
+    display: grid;
+}
+
+.pp-social-share-col-4 .pp-social-share-inner {
+    grid-template-columns: repeat(4,1fr);
+    display: grid;
+}
+
+.pp-social-share-col-5 .pp-social-share-inner {
+    grid-template-columns: repeat(5,1fr);
+    display: grid;
+}
+
+.pp-social-share-col-6 .pp-social-share-inner {
+    grid-template-columns: repeat(6,1fr);
+    display: grid;
+}
+
+/* Button */
+.pp-share-button {
+	overflow: hidden;
+	font-size: 10px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+		-ms-flex-align: center;
+			align-items: center;
+	-webkit-box-pack: start;
+		-ms-flex-pack: start;
+			justify-content: flex-start;
+	-webkit-transition-duration: 0.2s;
+		-o-transition-duration: 0.2s;
+			transition-duration: 0.2s;
+	-webkit-transition-property: background-color, border-color, -webkit-filter;
+	transition-property: background-color, border-color, -webkit-filter;
+	-o-transition-property: filter, background-color, border-color;
+	transition-property: filter, background-color, border-color;
+	transition-property: filter, background-color, border-color, -webkit-filter;
+	height: 4.5em;
+	cursor: pointer;
+}
+
+.pp-share-button a {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	text-decoration: none !important;
+}
+
+.pp-share-button-icon,
+.pp-share-button-text {
+	-webkit-transition-property: color, background-color;
+	-o-transition-property: color, background-color;
+	transition-property: color, background-color;
+	-webkit-transition-duration: 0.2s;
+			-o-transition-duration: 0.2s;
+			transition-duration: 0.2s;
+}
+
+.pp-share-button-icon {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-item-align: stretch;
+		align-self: stretch;
+	-webkit-box-pack: center;
+		-ms-flex-pack: center;
+			justify-content: center;
+	-webkit-box-align: center;
+		-ms-flex-align: center;
+			align-items: center;
+	width: 4.5em;
+	position: relative;
+}
+
+.pp-share-button-icon i {
+	font-size: 1.7em;
+}
+
+.pp-share-button-text {
+	font-size: 1.5em;
+	padding-right: 1em;
+	-ms-flex-item-align: stretch;
+		align-self: stretch;
+	-webkit-box-flex: 1;
+		-ms-flex-positive: 1;
+			flex-grow: 1;
+	-webkit-box-align: center;
+		-ms-flex-align: center;
+			align-items: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	font-weight: 100;
+}
+
+.pp-share-button-title {
+	font-weight: bold;
+	-ms-flex-negative: 0;
+		flex-shrink: 0;
+}
+
+.pp-share-buttons-color-custom.pp-share-buttons-skin-flat .pp-share-button a,
+.pp-share-buttons-color-custom.pp-share-buttons-skin-gradient .pp-share-button a {
+	background-color: #ea4335;
+}
+
+.pp-share-buttons-color-custom.pp-share-buttons-skin-framed .pp-share-button a,
+.pp-share-buttons-color-custom.pp-share-buttons-skin-minimal .pp-share-button a,
+.pp-share-buttons-color-custom.pp-share-buttons-skin-boxed .pp-share-button a {
+	color: #ea4335;
+}
+
+.pp-share-buttons-color-custom.pp-share-buttons-skin-boxed .pp-share-button .pp-share-button-icon,
+.pp-share-buttons-color-custom.pp-share-buttons-skin-minimal .pp-share-button .pp-share-button-icon {
+	background-color: #ea4335;
+}
+
+.pp-share-buttons-color-custom.pp-share-buttons-skin-boxed .pp-share-button-icon,
+.pp-share-buttons-color-custom.pp-share-buttons-skin-minimal .pp-share-button-icon {
+	color: #fff;
+}
+
+.pp-share-buttons-color-official .pp-share-button:hover {
+	-webkit-filter: saturate(1.5) brightness(1.2);
+		filter: saturate(1.5) brightness(1.2);
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-flat .pp-share-button-delicious,
+.pp-share-buttons-color-official.pp-share-buttons-skin-gradient .pp-share-button-delicious {
+	background-color: #3399ff;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-flat .pp-share-button-digg,
+.pp-share-buttons-color-official.pp-share-buttons-skin-gradient .pp-share-button-digg {
+	background-color: #005be2;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-flat .pp-share-button-email,
+.pp-share-buttons-color-official.pp-share-buttons-skin-gradient .pp-share-button-email {
+	background-color: #ea4335;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-flat .pp-share-button-print,
+.pp-share-buttons-color-official.pp-share-buttons-skin-gradient .pp-share-button-print {
+	background-color: #aaaaaa;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-flat .pp-share-button-facebook,
+.pp-share-buttons-color-official.pp-share-buttons-skin-gradient .pp-share-button-facebook {
+	background-color: #3b5998;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-flat .pp-share-button-google,
+.pp-share-buttons-color-official.pp-share-buttons-skin-gradient .pp-share-button-google {
+	background-color: #dd4b39;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-flat .pp-share-button-pocket,
+.pp-share-buttons-color-official.pp-share-buttons-skin-gradient .pp-share-button-pocket {
+	background-color: #EF3F56;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-flat .pp-share-button-linkedin,
+.pp-share-buttons-color-official.pp-share-buttons-skin-gradient .pp-share-button-linkedin {
+	background-color: #0077b5;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-flat .pp-share-button-odnoklassniki,
+.pp-share-buttons-color-official.pp-share-buttons-skin-gradient .pp-share-button-odnoklassniki {
+	background-color: #F4731C;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-flat .pp-share-button-pinterest,
+.pp-share-buttons-color-official.pp-share-buttons-skin-gradient .pp-share-button-pinterest {
+	background-color: #bd081c;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-flat .pp-share-button-reddit,
+.pp-share-buttons-color-official.pp-share-buttons-skin-gradient .pp-share-button-reddit {
+	background-color: #ff4500;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-flat .pp-share-button-skype,
+.pp-share-buttons-color-official.pp-share-buttons-skin-gradient .pp-share-button-skype {
+	background-color: #00AFF0;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-flat .pp-share-button-slideshare,
+.pp-share-buttons-color-official.pp-share-buttons-skin-gradient .pp-share-button-slideshare {
+	background-color: #0077b5;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-flat .pp-share-button-snapchat,
+.pp-share-buttons-color-official.pp-share-buttons-skin-gradient .pp-share-button-snapchat {
+	background-color: #fffc00;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-flat .pp-share-button-stumbleupon,
+.pp-share-buttons-color-official.pp-share-buttons-skin-gradient .pp-share-button-stumbleupon {
+	background-color: #EB4924;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-flat .pp-share-button-tumblr,
+.pp-share-buttons-color-official.pp-share-buttons-skin-gradient .pp-share-button-tumblr {
+	background-color: #35465c;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-flat .pp-share-button-twitch,
+.pp-share-buttons-color-official.pp-share-buttons-skin-gradient .pp-share-button-twitch {
+	background-color: #6441A5;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-flat .pp-share-button-telegram,
+.pp-share-buttons-color-official.pp-share-buttons-skin-gradient .pp-share-button-telegram {
+	background-color: #2CA5E0;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-flat .pp-share-button-twitter,
+.pp-share-buttons-color-official.pp-share-buttons-skin-gradient .pp-share-button-twitter {
+	background-color: #1DA1F2;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-flat .pp-share-button-vimeo,
+.pp-share-buttons-color-official.pp-share-buttons-skin-gradient .pp-share-button-vimeo {
+	background-color: #1ab7ea;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-flat .pp-share-button-vk,
+.pp-share-buttons-color-official.pp-share-buttons-skin-gradient .pp-share-button-vk {
+	background-color: #45668e;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-flat .pp-share-button-whatsapp,
+.pp-share-buttons-color-official.pp-share-buttons-skin-gradient .pp-share-button-whatsapp {
+	background-color: #25d366;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-flat .pp-share-button-wordpress,
+.pp-share-buttons-color-official.pp-share-buttons-skin-gradient .pp-share-button-wordpress {
+	background-color: #21759b;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-flat .pp-share-button-xing,
+.pp-share-buttons-color-official.pp-share-buttons-skin-gradient .pp-share-button-xing {
+	background-color: #026466;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-flat .pp-share-button-blogger,
+.pp-share-buttons-color-official.pp-share-buttons-skin-gradient .pp-share-button-blogger {
+	background-color: #F06A35;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-flat .pp-share-button-myspace,
+.pp-share-buttons-color-official.pp-share-buttons-skin-gradient .pp-share-button-myspace {
+	background-color: #3E5EAB;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-flat .pp-share-button-fb-messenger,
+.pp-share-buttons-color-official.pp-share-buttons-skin-gradient .pp-share-button-fb-messenger {
+	background-color: #007BF8;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-flat .pp-share-button-wechat,
+.pp-share-buttons-color-official.pp-share-buttons-skin-gradient .pp-share-button-wechat {
+	background-color: #2BBC00;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-flat .pp-share-button-buffer,
+.pp-share-buttons-color-official.pp-share-buttons-skin-gradient .pp-share-button-buffer {
+	background-color: #1E2226;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-framed .pp-share-button-delicious a,
+.pp-share-buttons-color-official.pp-share-buttons-skin-boxed .pp-share-button-delicious a,
+.pp-share-buttons-color-official.pp-share-buttons-skin-minimal .pp-share-button-delicious a {
+	color: #3399ff;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-framed .pp-share-button-digg a,
+.pp-share-buttons-color-official.pp-share-buttons-skin-boxed .pp-share-button-digg a,
+.pp-share-buttons-color-official.pp-share-buttons-skin-minimal .pp-share-button-digg a {
+	color: #005be2;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-framed .pp-share-button-email a,
+.pp-share-buttons-color-official.pp-share-buttons-skin-boxed .pp-share-button-email a,
+.pp-share-buttons-color-official.pp-share-buttons-skin-minimal .pp-share-button-email a {
+	color: #ea4335;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-framed .pp-share-button-print a,
+.pp-share-buttons-color-official.pp-share-buttons-skin-boxed .pp-share-button-print a,
+.pp-share-buttons-color-official.pp-share-buttons-skin-minimal .pp-share-button-print a {
+	color: #aaaaaa;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-framed .pp-share-button-facebook a,
+.pp-share-buttons-color-official.pp-share-buttons-skin-boxed .pp-share-button-facebook a,
+.pp-share-buttons-color-official.pp-share-buttons-skin-minimal .pp-share-button-facebook a {
+	color: #3b5998;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-framed .pp-share-button-google a,
+.pp-share-buttons-color-official.pp-share-buttons-skin-boxed .pp-share-button-google a,
+.pp-share-buttons-color-official.pp-share-buttons-skin-minimal .pp-share-button-google a {
+	color: #dd4b39;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-framed .pp-share-button-pocket a,
+.pp-share-buttons-color-official.pp-share-buttons-skin-boxed .pp-share-button-pocket a,
+.pp-share-buttons-color-official.pp-share-buttons-skin-minimal .pp-share-button-pocket a {
+	color: #EF3F56;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-framed .pp-share-button-linkedin a,
+.pp-share-buttons-color-official.pp-share-buttons-skin-boxed .pp-share-button-linkedin a,
+.pp-share-buttons-color-official.pp-share-buttons-skin-minimal .pp-share-button-linkedin a {
+	color: #0077b5;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-framed .pp-share-button-odnoklassniki a,
+.pp-share-buttons-color-official.pp-share-buttons-skin-boxed .pp-share-button-odnoklassniki a,
+.pp-share-buttons-color-official.pp-share-buttons-skin-minimal .pp-share-button-odnoklassniki a {
+	color: #F4731C;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-framed .pp-share-button-pinterest a,
+.pp-share-buttons-color-official.pp-share-buttons-skin-boxed .pp-share-button-pinterest a,
+.pp-share-buttons-color-official.pp-share-buttons-skin-minimal .pp-share-button-pinterest a {
+	color: #bd081c;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-framed .pp-share-button-reddit a,
+.pp-share-buttons-color-official.pp-share-buttons-skin-boxed .pp-share-button-reddit a,
+.pp-share-buttons-color-official.pp-share-buttons-skin-minimal .pp-share-button-reddit a {
+	color: #ff4500;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-framed .pp-share-button-skype a,
+.pp-share-buttons-color-official.pp-share-buttons-skin-boxed .pp-share-button-skype a,
+.pp-share-buttons-color-official.pp-share-buttons-skin-minimal .pp-share-button-skype a {
+	color: #00AFF0;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-framed .pp-share-button-slideshare a,
+.pp-share-buttons-color-official.pp-share-buttons-skin-boxed .pp-share-button-slideshare a,
+.pp-share-buttons-color-official.pp-share-buttons-skin-minimal .pp-share-button-slideshare a {
+	color: #0077b5;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-framed .pp-share-button-snapchat a,
+.pp-share-buttons-color-official.pp-share-buttons-skin-boxed .pp-share-button-snapchat a,
+.pp-share-buttons-color-official.pp-share-buttons-skin-minimal .pp-share-button-snapchat a {
+	color: #fffc00;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-framed .pp-share-button-stumbleupon a,
+.pp-share-buttons-color-official.pp-share-buttons-skin-boxed .pp-share-button-stumbleupon a,
+.pp-share-buttons-color-official.pp-share-buttons-skin-minimal .pp-share-button-stumbleupon a {
+	color: #EB4924;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-framed .pp-share-button-tumblr a,
+.pp-share-buttons-color-official.pp-share-buttons-skin-boxed .pp-share-button-tumblr a,
+.pp-share-buttons-color-official.pp-share-buttons-skin-minimal .pp-share-button-tumblr a {
+	color: #35465c;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-framed .pp-share-button-twitch a,
+.pp-share-buttons-color-official.pp-share-buttons-skin-boxed .pp-share-button-twitch a,
+.pp-share-buttons-color-official.pp-share-buttons-skin-minimal .pp-share-button-twitch a {
+	color: #6441A5;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-framed .pp-share-button-telegram a,
+.pp-share-buttons-color-official.pp-share-buttons-skin-boxed .pp-share-button-telegram a,
+.pp-share-buttons-color-official.pp-share-buttons-skin-minimal .pp-share-button-telegram a {
+	color: #2CA5E0;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-framed .pp-share-button-twitter a,
+.pp-share-buttons-color-official.pp-share-buttons-skin-boxed .pp-share-button-twitter a,
+.pp-share-buttons-color-official.pp-share-buttons-skin-minimal .pp-share-button-twitter a {
+	color: #1DA1F2;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-framed .pp-share-button-vimeo a,
+.pp-share-buttons-color-official.pp-share-buttons-skin-boxed .pp-share-button-vimeo a,
+.pp-share-buttons-color-official.pp-share-buttons-skin-minimal .pp-share-button-vimeo a {
+	color: #1ab7ea;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-framed .pp-share-button-vk a,
+.pp-share-buttons-color-official.pp-share-buttons-skin-boxed .pp-share-button-vk a,
+.pp-share-buttons-color-official.pp-share-buttons-skin-minimal .pp-share-button-vk a {
+	color: #45668e;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-framed .pp-share-button-whatsapp a,
+.pp-share-buttons-color-official.pp-share-buttons-skin-boxed .pp-share-button-whatsapp a,
+.pp-share-buttons-color-official.pp-share-buttons-skin-minimal .pp-share-button-whatsapp a {
+	color: #25d366;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-framed .pp-share-button-wordpress a,
+.pp-share-buttons-color-official.pp-share-buttons-skin-boxed .pp-share-button-wordpress a,
+.pp-share-buttons-color-official.pp-share-buttons-skin-minimal .pp-share-button-wordpress a {
+	color: #21759b;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-framed .pp-share-button-xing a,
+.pp-share-buttons-color-official.pp-share-buttons-skin-boxed .pp-share-button-xing a,
+.pp-share-buttons-color-official.pp-share-buttons-skin-minimal .pp-share-button-xing a {
+	color: #026466;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-framed .pp-share-button-blogger a,
+.pp-share-buttons-color-official.pp-share-buttons-skin-boxed .pp-share-button-blogger a,
+.pp-share-buttons-color-official.pp-share-buttons-skin-minimal .pp-share-button-blogger a {
+	color: #F06A35;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-framed .pp-share-button-myspace a,
+.pp-share-buttons-color-official.pp-share-buttons-skin-boxed .pp-share-button-myspace a,
+.pp-share-buttons-color-official.pp-share-buttons-skin-minimal .pp-share-button-myspace a {
+	color: #3E5EAB;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-framed .pp-share-button-fb-messenger a,
+.pp-share-buttons-color-official.pp-share-buttons-skin-boxed .pp-share-button-fb-messenger a,
+.pp-share-buttons-color-official.pp-share-buttons-skin-minimal .pp-share-button-fb-messenger a {
+	color: #007BF8;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-framed .pp-share-button-wechat a,
+.pp-share-buttons-color-official.pp-share-buttons-skin-boxed .pp-share-button-wechat a,
+.pp-share-buttons-color-official.pp-share-buttons-skin-minimal .pp-share-button-wechat a {
+	color: #2BBC00;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-framed .pp-share-button-buffer a,
+.pp-share-buttons-color-official.pp-share-buttons-skin-boxed .pp-share-button-buffer a,
+.pp-share-buttons-color-official.pp-share-buttons-skin-minimal .pp-share-button-buffer a {
+	color: #1E2226;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-boxed .pp-share-button-delicious .pp-share-button-icon,
+.pp-share-buttons-color-official.pp-share-buttons-skin-minimal .pp-share-button-delicious .pp-share-button-icon {
+	background-color: #3399ff;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-boxed .pp-share-button-digg .pp-share-button-icon,
+.pp-share-buttons-color-official.pp-share-buttons-skin-minimal .pp-share-button-digg .pp-share-button-icon {
+	background-color: #005be2;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-boxed .pp-share-button-email .pp-share-button-icon,
+.pp-share-buttons-color-official.pp-share-buttons-skin-minimal .pp-share-button-email .pp-share-button-icon {
+	background-color: #ea4335;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-boxed .pp-share-button-print .pp-share-button-icon,
+.pp-share-buttons-color-official.pp-share-buttons-skin-minimal .pp-share-button-print .pp-share-button-icon {
+	background-color: #aaaaaa;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-boxed .pp-share-button-facebook .pp-share-button-icon,
+.pp-share-buttons-color-official.pp-share-buttons-skin-minimal .pp-share-button-facebook .pp-share-button-icon {
+	background-color: #3b5998;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-boxed .pp-share-button-google .pp-share-button-icon,
+.pp-share-buttons-color-official.pp-share-buttons-skin-minimal .pp-share-button-google .pp-share-button-icon {
+	background-color: #dd4b39;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-boxed .pp-share-button-pocket .pp-share-button-icon,
+.pp-share-buttons-color-official.pp-share-buttons-skin-minimal .pp-share-button-pocket .pp-share-button-icon {
+	background-color: #EF3F56;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-boxed .pp-share-button-linkedin .pp-share-button-icon,
+.pp-share-buttons-color-official.pp-share-buttons-skin-minimal .pp-share-button-linkedin .pp-share-button-icon {
+	background-color: #0077b5;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-boxed .pp-share-button-odnoklassniki .pp-share-button-icon,
+.pp-share-buttons-color-official.pp-share-buttons-skin-minimal .pp-share-button-odnoklassniki .pp-share-button-icon {
+	background-color: #F4731C;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-boxed .pp-share-button-pinterest .pp-share-button-icon,
+.pp-share-buttons-color-official.pp-share-buttons-skin-minimal .pp-share-button-pinterest .pp-share-button-icon {
+	background-color: #bd081c;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-boxed .pp-share-button-reddit .pp-share-button-icon,
+.pp-share-buttons-color-official.pp-share-buttons-skin-minimal .pp-share-button-reddit .pp-share-button-icon {
+	background-color: #ff4500;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-boxed .pp-share-button-skype .pp-share-button-icon,
+.pp-share-buttons-color-official.pp-share-buttons-skin-minimal .pp-share-button-skype .pp-share-button-icon {
+	background-color: #00AFF0;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-boxed .pp-share-button-slideshare .pp-share-button-icon,
+.pp-share-buttons-color-official.pp-share-buttons-skin-minimal .pp-share-button-slideshare .pp-share-button-icon {
+	background-color: #0077b5;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-boxed .pp-share-button-snapchat .pp-share-button-icon,
+.pp-share-buttons-color-official.pp-share-buttons-skin-minimal .pp-share-button-snapchat .pp-share-button-icon {
+	background-color: #fffc00;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-boxed .pp-share-button-stumbleupon .pp-share-button-icon,
+.pp-share-buttons-color-official.pp-share-buttons-skin-minimal .pp-share-button-stumbleupon .pp-share-button-icon {
+	background-color: #EB4924;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-boxed .pp-share-button-tumblr .pp-share-button-icon,
+.pp-share-buttons-color-official.pp-share-buttons-skin-minimal .pp-share-button-tumblr .pp-share-button-icon {
+	background-color: #35465c;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-boxed .pp-share-button-twitch .pp-share-button-icon,
+.pp-share-buttons-color-official.pp-share-buttons-skin-minimal .pp-share-button-twitch .pp-share-button-icon {
+	background-color: #6441A5;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-boxed .pp-share-button-telegram .pp-share-button-icon,
+.pp-share-buttons-color-official.pp-share-buttons-skin-minimal .pp-share-button-telegram .pp-share-button-icon {
+	background-color: #2CA5E0;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-boxed .pp-share-button-twitter .pp-share-button-icon,
+.pp-share-buttons-color-official.pp-share-buttons-skin-minimal .pp-share-button-twitter .pp-share-button-icon {
+	background-color: #1DA1F2;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-boxed .pp-share-button-vimeo .pp-share-button-icon,
+.pp-share-buttons-color-official.pp-share-buttons-skin-minimal .pp-share-button-vimeo .pp-share-button-icon {
+	background-color: #1ab7ea;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-boxed .pp-share-button-vk .pp-share-button-icon,
+.pp-share-buttons-color-official.pp-share-buttons-skin-minimal .pp-share-button-vk .pp-share-button-icon {
+	background-color: #45668e;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-boxed .pp-share-button-whatsapp .pp-share-button-icon,
+.pp-share-buttons-color-official.pp-share-buttons-skin-minimal .pp-share-button-whatsapp .pp-share-button-icon {
+	background-color: #25d366;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-boxed .pp-share-button-wordpress .pp-share-button-icon,
+.pp-share-buttons-color-official.pp-share-buttons-skin-minimal .pp-share-button-wordpress .pp-share-button-icon {
+	background-color: #21759b;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-boxed .pp-share-button-xing .pp-share-button-icon,
+.pp-share-buttons-color-official.pp-share-buttons-skin-minimal .pp-share-button-xing .pp-share-button-icon {
+	background-color: #026466;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-boxed .pp-share-button-blogger .pp-share-button-icon,
+.pp-share-buttons-color-official.pp-share-buttons-skin-minimal .pp-share-button-blogger .pp-share-button-icon {
+	background-color: #F06A35;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-boxed .pp-share-button-myspace .pp-share-button-icon,
+.pp-share-buttons-color-official.pp-share-buttons-skin-minimal .pp-share-button-myspace .pp-share-button-icon {
+	background-color: #3E5EAB;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-boxed .pp-share-button-fb-messenger .pp-share-button-icon,
+.pp-share-buttons-color-official.pp-share-buttons-skin-minimal .pp-share-button-fb-messenger .pp-share-button-icon {
+	background-color: #007BF8;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-boxed .pp-share-button-wechat .pp-share-button-icon,
+.pp-share-buttons-color-official.pp-share-buttons-skin-minimal .pp-share-button-wechat .pp-share-button-icon {
+	background-color: #2BBC00;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-boxed .pp-share-button-buffer .pp-share-button-icon,
+.pp-share-buttons-color-official.pp-share-buttons-skin-minimal .pp-share-button-buffer .pp-share-button-icon {
+	background-color: #1E2226;
+}
+
+.pp-share-buttons-color-official.pp-share-buttons-skin-boxed .pp-share-button .pp-share-button-icon,
+.pp-share-buttons-color-official.pp-share-buttons-skin-minimal .pp-share-button .pp-share-button-icon {
+	color: #fff;
+}
+
+.pp-share-buttons-skin-framed .pp-share-button a,
+.pp-share-buttons-skin-boxed .pp-share-button a {
+	border-style: solid;
+}
+
+.pp-share-buttons-skin-gradient .pp-share-button-text {
+	background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.12)), to(rgba(0, 0, 0, 0)));
+	background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0));
+	background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0));
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0));
+}
+
+.pp-share-buttons-skin-gradient.pp-share-buttons-view-icon .pp-share-button-icon {
+	background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.12)), to(rgba(0, 0, 0, 0)));
+	background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0));
+	background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0));
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0));
+}
+
+.pp-share-buttons-skin-boxed .pp-share-button-text,
+.pp-share-buttons-skin-minimal .pp-share-button-text,
+.pp-share-buttons-skin-gradient .pp-share-button-text {
+	padding-left: 0.9em;
+}
+
+.pp-share-buttons-skin-flat .pp-share-button a,
+.pp-share-buttons-skin-flat .pp-share-button:hover a,
+.pp-share-buttons-skin-gradient .pp-share-button a,
+.pp-share-buttons-skin-gradient .pp-share-button:hover a {
+	color: #fff;
+}
+
+.pp-share-buttons-skin-minimal.pp-share-buttons-shape-rounded .pp-share-button-icon {
+	border-radius: 0.5em;
+}
+
+.pp-share-buttons-skin-minimal.pp-share-buttons-shape-circle .pp-share-button-icon {
+	border-radius: 99.9em;
+}
+
+.pp-share-buttons-view-text .pp-share-button-text {
+	padding-left: 1em;
+}
+
+.pp-share-buttons-view-text .pp-share-button,
+.pp-share-buttons-view-icon .pp-share-button {
+	-webkit-box-pack: center;
+		-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.pp-share-buttons-view-text .pp-share-button-icon,
+.pp-share-buttons-view-text .pp-share-button-text,
+.pp-share-buttons-view-icon .pp-share-button-icon,
+.pp-share-buttons-view-icon .pp-share-button-text {
+	-webkit-box-flex: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.pp-share-buttons-shape-rounded .pp-share-button {
+	border-radius: 0.5em;
+}
+
+.pp-share-buttons-shape-circle .pp-share-button {
+	border-radius: 99.9em;
+}
+
+/* Alignment */
+.pp-share-buttons-align-right .pp-social-share-inner {
+	-webkit-box-pack: end;
+		-ms-flex-pack: end;
+			justify-content: flex-end;
+}
+
+.pp-share-buttons-align-left .pp-social-share-inner {
+	-webkit-box-pack: start;
+		-ms-flex-pack: start;
+			justify-content: flex-start;
+}
+
+.pp-share-buttons-align-center .pp-social-share-inner {
+	-webkit-box-pack: center;
+		-ms-flex-pack: center;
+			justify-content: center;
+}
+
+.pp-share-buttons-align-justify .pp-social-share-inner {
+	-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+			justify-content: space-between;
+}
